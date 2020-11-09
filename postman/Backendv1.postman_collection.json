@@ -1,0 +1,437 @@
+{
+	"info": {
+		"_postman_id": "dd212181-2d8c-4f60-b6ad-a285f2c3f4e3",
+		"name": "Backendv1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "/products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYTlhZWYyODY5ZTA2MjI4Y2I5ZGNjYSIsImlhdCI6MTYwNDk1NTkxNiwiZXhwIjoxNjA1MDQyMzE2fQ.BVGqeUzGiiX-wzsdjS1hA2INqmfI5ViJWl_17hVi314",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/api/product/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"product",
+								""
+							]
+						},
+						"description": "Update Product"
+					},
+					"response": []
+				},
+				{
+					"name": "/product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-access-token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYTlhZWYyODY5ZTA2MjI4Y2I5ZGNjYSIsImlhdCI6MTYwNDk1NTkxNiwiZXhwIjoxNjA1MDQyMzE2fQ.BVGqeUzGiiX-wzsdjS1hA2INqmfI5ViJWl_17hVi314"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Pepsi 1/2 litro\",\r\n    \"category\": \"Bebida\",\r\n    \"description\": \"Bebida\",\r\n    \"imgURL\": \"\"\r\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/product",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/idproduct",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYTlhZWYyODY5ZTA2MjI4Y2I5ZGNjYSIsImlhdCI6MTYwNDk1NTkxNiwiZXhwIjoxNjA1MDQyMzE2fQ.BVGqeUzGiiX-wzsdjS1hA2INqmfI5ViJWl_17hVi314",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"ninguna\"\r\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/product/5fa9af3c869e06228cb9dccb",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"product",
+								"5fa9af3c869e06228cb9dccb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/idproduct",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYTlhZWYyODY5ZTA2MjI4Y2I5ZGNjYSIsImlhdCI6MTYwNDk1NTkxNiwiZXhwIjoxNjA1MDQyMzE2fQ.BVGqeUzGiiX-wzsdjS1hA2INqmfI5ViJWl_17hVi314",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/product/5fa9af3c869e06228cb9dccb",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"product",
+								"5fa9af3c869e06228cb9dccb"
+							]
+						},
+						"description": "Delete Product"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "localhost:3000/api/auth/signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Demo\",\r\n    \"email\": \"demo@gmail.com\",\r\n    \"password\": \"demo\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/auth/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/auth/signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNzY0ZjY4YmZmNGEyMTA4Y2FlZDM1MCIsImlhdCI6MTYwMTU4OTA5NiwiZXhwIjoxNjAxNjc1NDk2fQ.FZoC0707ZvfE9WirskQoTdqgfR_pWil0dMIp_br2Xqo",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"demo@gmail.com\",\r\n    \"password\": \"demo\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/auth/signin",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Kevin Joseph\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/5f8a9c002dcd2d0db894d1dc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"5f8a9c002dcd2d0db894d1dc"
+							]
+						},
+						"description": "Update User"
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/user/5fa9a57ea229c8528c4e9b4d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"5fa9a57ea229c8528c4e9b4d"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "roles",
+			"item": [
+				{
+					"name": "/roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/roles",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/roles",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"developer\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/roles",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/idrole",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Devs\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/roles/5fa567d4366c5f0cb44e03b8",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"roles",
+								"5fa567d4366c5f0cb44e03b8"
+							]
+						},
+						"description": "Update role"
+					},
+					"response": []
+				},
+				{
+					"name": "/idrole",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/roles/5fa567d4366c5f0cb44e03b8",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"roles",
+								"5fa567d4366c5f0cb44e03b8"
+							]
+						},
+						"description": "Delete Role"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

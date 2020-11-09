@@ -9,9 +9,10 @@ const app = express()
 app.use(cors());
 createRoles();
 
-import productsRoutes from './routes/products.routes'
+import productsRoutes from './routes/product.routes'
 import authRoutes from './routes/auth.routes'
-import userRoutes from './routes/users.routes'
+import userRoutes from './routes/user.routes'
+import roleRoutes from './routes/role.routes'
 
 app.set('pkg',pkg);
 
@@ -25,8 +26,9 @@ app.get('/',(req,res) => {
     })
 })
 
-app.use('/api/products',productsRoutes)
+app.use('/api/product',productsRoutes)
 app.use('/api/auth',authRoutes)
-app.use('/api/users',userRoutes)
+app.use('/api/user',userRoutes)
+app.use('/api/role',roleRoutes)
 
 export default app;
