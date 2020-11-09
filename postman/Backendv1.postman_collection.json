@@ -329,14 +329,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/roles",
+							"raw": "localhost:3000/api/role",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
 								"api",
-								"roles"
+								"role"
 							]
 						}
 					},
@@ -358,14 +358,14 @@
 							"raw": "{\r\n    \"name\": \"developer\"\r\n}"
 						},
 						"url": {
-							"raw": "localhost:3000/api/roles",
+							"raw": "localhost:3000/api/role",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
 								"api",
-								"roles"
+								"role"
 							]
 						}
 					},
@@ -387,15 +387,15 @@
 							"raw": "{\r\n    \"name\":\"Devs\"\r\n}"
 						},
 						"url": {
-							"raw": "localhost:3000/api/roles/5fa567d4366c5f0cb44e03b8",
+							"raw": "localhost:3000/api/role/5fa9afcb869e06228cb9dccc",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
 								"api",
-								"roles",
-								"5fa567d4366c5f0cb44e03b8"
+								"role",
+								"5fa9afcb869e06228cb9dccc"
 							]
 						},
 						"description": "Update role"
@@ -414,15 +414,15 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:3000/api/roles/5fa567d4366c5f0cb44e03b8",
+							"raw": "localhost:3000/api/role/5fa9afcb869e06228cb9dccc",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
 								"api",
-								"roles",
-								"5fa567d4366c5f0cb44e03b8"
+								"role",
+								"5fa9afcb869e06228cb9dccc"
 							]
 						},
 						"description": "Delete Role"
