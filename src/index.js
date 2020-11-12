@@ -1,6 +1,7 @@
 import app from './app'
 import './database'
 
-app.listen(3000)
-
-console.log('Server listen on port',3000)
+app.set('port', process.env.PORT || 3000);
+app.listen(app.get('port'), () => {
+  console.log('Server listeng port '+ app.get('port'));
+});
