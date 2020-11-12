@@ -1,4 +1,4 @@
-//import 'babel-polyfill'; // requirements async await deploy heroku
+import 'babel-polyfill'; // requirements async await deploy heroku
 import app from './app'
 import './database'
 
