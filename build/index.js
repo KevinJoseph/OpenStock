@@ -8,6 +8,7 @@ require("./database");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
+// requirements async await deploy heroku
 _app["default"].set('port', process.env.PORT || 3000);
 
 _app["default"].listen(_app["default"].get('port'), function () {
