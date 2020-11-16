@@ -7,7 +7,7 @@ import {authJwt} from '../middlewares'
 //router.post('/',[authJwt.verifyToken, authJwt.isAdmin],productsController.createProduct)
 router.post('/',[authJwt.verifyToken],productsController.createProduct)
 
-router.get('/',[authJwt.verifyToken], productsController.getProducts)
+router.get('/', productsController.getProducts)
 
 router.get('/:productId',[authJwt.verifyToken], productsController.getProductById)
 
