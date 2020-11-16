@@ -19,10 +19,10 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 var router = (0, _express.Router)();
 //router.post('/',[authJwt.verifyToken, authJwt.isAdmin],productsController.createProduct)
-router.post('/', [_middlewares.authJwt.verifyToken], productsController.createProduct);
+router.post('/', productsController.createProduct);
 router.get('/', productsController.getProducts);
-router.get('/:productId', [_middlewares.authJwt.verifyToken], productsController.getProductById);
-router.put('/:productId', [_middlewares.authJwt.verifyToken], productsController.updateProductById);
-router["delete"]('/:productId', [_middlewares.authJwt.verifyToken], productsController.deleteProductById);
+router.get('/:productId', productsController.getProductById);
+router.put('/:productId', productsController.updateProductById);
+router["delete"]('/:productId', productsController.deleteProductById);
 var _default = router;
 exports["default"] = _default;

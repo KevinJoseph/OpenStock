@@ -5,14 +5,14 @@ import * as productsController from '../controllers/product.controller'
 import {authJwt} from '../middlewares'
 
 //router.post('/',[authJwt.verifyToken, authJwt.isAdmin],productsController.createProduct)
-router.post('/',[authJwt.verifyToken],productsController.createProduct)
+router.post('/',productsController.createProduct)
 
 router.get('/', productsController.getProducts)
 
-router.get('/:productId',[authJwt.verifyToken], productsController.getProductById)
+router.get('/:productId', productsController.getProductById)
 
-router.put('/:productId',[authJwt.verifyToken],productsController.updateProductById)
+router.put('/:productId',productsController.updateProductById)
 
-router.delete('/:productId',[authJwt.verifyToken],productsController.deleteProductById)
+router.delete('/:productId',productsController.deleteProductById)
 
 export default router;
