@@ -13,6 +13,7 @@ import productsRoutes from './routes/product.routes'
 import authRoutes from './routes/auth.routes'
 import userRoutes from './routes/user.routes'
 import roleRoutes from './routes/role.routes'
+import movementsRoutes from './routes/movement.routes'
 
 app.set('pkg',pkg);
 
@@ -30,5 +31,6 @@ app.use('/api/product',productsRoutes)
 app.use('/api/auth',authRoutes)
 app.use('/api/user',userRoutes)
 app.use('/api/role',roleRoutes)
+app.use('/api/movement',movementsRoutes)
 
 export default app;
