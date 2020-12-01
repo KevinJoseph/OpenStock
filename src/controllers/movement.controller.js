@@ -6,7 +6,7 @@ export const createMovement = async (req,res) => {
     
     const newMovement = new Movement({provider, invoice, price_unit, price_total, quantity, type_movement, date});
     const movementSaved = await newMovement.save();
-
+    console.log("create product")
     res.status(201).json(movementSaved);
 }
 
