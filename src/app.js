@@ -33,4 +33,5 @@ app.use('/api/user',userRoutes)
 app.use('/api/role',roleRoutes)
 app.use('/api/movement',movementsRoutes)
 
+
 export default app;
