@@ -23,6 +23,8 @@ var _user = _interopRequireDefault(require("./routes/user.routes"));
 
 var _role = _interopRequireDefault(require("./routes/role.routes"));
 
+var _movement = _interopRequireDefault(require("./routes/movement.routes"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var app = (0, _express["default"])();
@@ -41,5 +43,6 @@ app.use('/api/product', _product["default"]);
 app.use('/api/auth', _auth["default"]);
 app.use('/api/user', _user["default"]);
 app.use('/api/role', _role["default"]);
+app.use('/api/movement', _movement["default"]);
 var _default = app;
 exports["default"] = _default;
