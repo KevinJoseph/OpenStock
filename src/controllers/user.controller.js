@@ -24,3 +24,17 @@ export const deleteUserById = async (req,res) => {
     await User.findByIdAndRemove(userId)
     res.status(204).json()
 }
+
+//Example Create User
+export const createUser = async (req,res) => {
+    const {email,password} = req.body
+    
+    const newUser = new User({
+        email,
+        password
+    })
+    
+    const userSaved = await newUser.save()
+
+    res.status(201).json(userSaved)
+}
